@@ -1,4 +1,4 @@
-# Lesson 2: Fullstack Development
+# Lesson 2: Fullstack Development Introduction
 ## Step 1:
 Please install the Google Chrome extension via [Allow CORS: Access-Control-Allow-Origin](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en)
 
