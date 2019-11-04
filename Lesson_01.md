@@ -1,4 +1,4 @@
-# Essential Django REST Framework
+# Lesson 1: Django REST Framework Quickstart
 ## Step 1: httpie
 
 Please install globally the following useful application for making API calls from your terminal.
@@ -15,7 +15,7 @@ http https://www.google.com/
 
 Would you like to know more? Please [vist the website](https://httpie.org/).
 
-## Step 2: Project Setup
+## Step 2: Backend Project Setup
 Create the project directory
 
 ```bash
@@ -197,7 +197,7 @@ class HelloAPIView(views.APIView):
         return response.Response( # Renders to content type as requested by the client.
             status=status.HTTP_200_OK,
             data={
-                'details': data,
+                'detail': data,
             }
         )
 ```
