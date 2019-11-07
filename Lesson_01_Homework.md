@@ -131,3 +131,36 @@ Review the code above and proceed to complete the following.
         Deletes all the numbers submitted in our app.
         
 4. Test your API endpoints using the ``HTTPie tool`` app.
+
+# D. Military Recruits
+The purpose of this application is submit prospective recruits and process their applications.
+
+1. Create a code repository named: ``api_mil_recruit``
+
+2. Create the project named: ``milrecruit``
+
+3. Write the django server project to implement the following API endpoints:
+
+        /add
+        POST
+        Adds a recruite. Please make sure to have the following fields:
+        * Name
+        * Age
+        * Has Glasses
+        
+        /accepted-recruits
+        GET
+        Returns a list of all the recurits who are accepted based on the criteria:
+        * If they are under 18 then they get rejected
+        
+        /rejected-recruits
+        GET
+        Returns a list of all the recurits who are rejected based on the following criteria:
+        * If they are under 18 then they get rejected
+        
+        /potential-airforce-recruits
+        GET
+        Returns a list of accepted recruits who belong to the Air-Force based on the following criteria:
+        * If the recruit does not have glasses
+ 
+4. Test your API endpoints using the ``HTTPie tool`` app.
