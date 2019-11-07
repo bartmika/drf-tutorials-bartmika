@@ -1,4 +1,4 @@
-# Homework
+# Lesson 01 - Homework
 ## A. Remote Calculator
 Create a calculator which will take numbers, perform mathemtical calculations, and return the computation results.
 
@@ -33,7 +33,7 @@ Create a calculator which will take numbers, perform mathemtical calculations, a
         http http://127.0.0.1:8000/clear
         http http://127.0.0.1:8000/result
         
-# B. Remote Statistics
+## B. Remote Statistics
 The purpose of this application is to create a statistics calculating microservice which programmers from all around the world can use in their web-applications.
 
 1. Create a code repository named: ``api_remote_stat``
@@ -64,7 +64,7 @@ The purpose of this application is to create a statistics calculating microservi
         
 4. Test your API endpoints using the ``HTTPie tool`` app.
 
-# C. Students DB
+## C. Students DB
 The purpose of this application is keep a record of students in our school. 
 
 Before you begin, here is an example of useful code to use with your details API endpount (retrieve, update, & delete).
@@ -132,7 +132,7 @@ Review the code above and proceed to complete the following.
         
 4. Test your API endpoints using the ``HTTPie tool`` app.
 
-# D. Military Recruits
+## D. Military Recruits
 The purpose of this application is submit prospective recruits and process their applications.
 
 1. Create a code repository named: ``api_mil_recruit``
@@ -163,4 +163,36 @@ The purpose of this application is submit prospective recruits and process their
         Returns a list of accepted recruits who belong to the Air-Force based on the following criteria:
         * If the recruit does not have glasses
  
+4. Test your API endpoints using the ``HTTPie tool`` app.
+
+## E. Account Service
+The purpose of this microservice is to handle all account related functions like login, register and profile.
+
+1. Create a code repository named: ``api_account_service``
+
+2. Create the project named: ``account_service``
+
+3. Write the django server project to implement the following API endpoints:
+
+        /login
+        POST
+        If correct the app will create a session for the user so every API request is authenticated, else return an error.
+        
+        /register
+        POST
+        Accepts the following fields and creates an account in our app:
+        * first name
+        * last name
+        * email
+        * password
+        * username
+        
+        /profile
+        GET
+        Returns the user account details.
+        
+        /change-password
+        POST
+        Changes the password
+        
 4. Test your API endpoints using the ``HTTPie tool`` app.
