@@ -82,17 +82,18 @@ class SnippetDetail(APIView):
 
     def get(self, request, pk, format=None):
         snippet = self.get_object(pk)
-        serializer = SnippetSerializer(snippet)
-        return Response(serializer.data)
+        # ...
+        return Response( # ... )
 
     def put(self, request, pk, format=None):
         snippet = self.get_object(pk)
-        serializer = SnippetSerializer(snippet, data=request.DATA)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
+        # ...
+        # Note: If validation fails then run the following:
+        # return Response(data={"error":"some error"}, status=status.HTTP_400_BAD_REQUEST)
+        
+        # Else return success.
+        return Response( # ... )
+        
     def delete(self, request, pk, format=None):
         snippet = self.get_object(pk)
         snippet.delete()
