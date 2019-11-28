@@ -1,4 +1,4 @@
-# How to Upload a Base64 File into Django REST Framework
+# How to Upload a Base64 File using Django REST Framework
 
 The purpose of this lesson is to show you how to upload files and submit data.
 
