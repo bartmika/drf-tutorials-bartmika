@@ -62,9 +62,15 @@ Modify our ``settings.py`` file.
 
 ```python
 INSTALLED_APPS = [
+    # Django Apps
     # ...
-
+    
     # Add our code near the bottom...
+    
+    # Third Party Apps
+    'rest_framework',
+
+    # Our Apps
     'foundation.apps.FoundationConfig',
     'api.apps.ApiConfig',
 ]
