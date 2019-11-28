@@ -11,7 +11,6 @@ Inside your ``foundation/models`` folder, please create a ``url_request_file_upl
 ```python
 
 from django.db import models
-from django.db import transaction
 from django.utils.translation import ugettext_lazy as _
 
 
@@ -20,16 +19,6 @@ class URLRequestFileUploadManager(models.Manager):
         items = URLRequestFileUpload.objects.all()
         for item in items.all():
             item.delete()
-
-
-@transaction.atomic
-def increment_private_file_upload_id_number():
-    """Function will generate a unique big-int."""
-    private_file_upload = URLRequestFileUpload.objects.all().order_by('id').last();
-    if private_file_upload:
-        return private_file_upload.id + 1
-    return 1
-
 
 class URLRequestFileUpload(models.Model):
     """
